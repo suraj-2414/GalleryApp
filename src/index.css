@@ -1,0 +1,9 @@
+@import "tailwindcss";
+.srcho{
+
+    border-bottom: 8px solid rgba(157, 200, 157, 0.943);
+}
+.footer{
+    border-top: 6px solid rgba(125, 184, 125, 0.763);
+    border-bottom: 7px solid rgba(125, 184, 125, 0.943);
+}
