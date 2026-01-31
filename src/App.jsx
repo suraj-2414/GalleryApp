@@ -4,9 +4,6 @@ import.meta.env.VITE_UNSPLASH_ACCESS_KEY
 import Srch from './assets/Components/Srch'
 import Images from './assets/Components/Images'
 
-
-
-
 const App = () => {
 
   const [index, setIndex] = useState(1)
