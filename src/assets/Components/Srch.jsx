@@ -1,6 +1,9 @@
 import { Search ,X  } from 'lucide-react';
 
 const Srch = ({value,setValue,get}) => {
+  const submitHandler = (e)=>{
+     e.preventDefault()
+  }
   return (
     <div className=' srcho flex justify-between items-center pt-4 md:pt-7 md:pb-2 pb-0.5 px-4 md:px-10'>
         <div className='pb-2 '> 
@@ -11,7 +14,10 @@ const Srch = ({value,setValue,get}) => {
           
         <h1 className=' appName font-extrabold   font-sans text-lg md:text-3xl lg:pr-25 lg:text-4xl'><span className='text-green-800'>pi</span>xelScout</h1>
               
-        <div className=' srch-box relative flex items-center justify-center   '>   
+        <form  onSubmit={(e)=>{
+               submitHandler(e)
+
+        }} className=' srch-box relative flex items-center justify-center   '>   
           <button onClick={()=>{
                      get()                      
                 }}
@@ -32,7 +38,7 @@ const Srch = ({value,setValue,get}) => {
             </button>   
 
             
-        </div>
+        </form>
     </div>
   )
 }
