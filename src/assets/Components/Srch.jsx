@@ -1,9 +1,9 @@
 import { Search ,X  } from 'lucide-react';
 
-const Srch = ({value,setValue,get}) => {
-  const submitHandler = (e)=>{
-     e.preventDefault()
-  }
+const Srch = ({value, setIndex ,setValue,get}) => {
+  // const submitHandler = (e)=>{
+  //    e.preventDefault()
+  // }
   return (
     <div className=' srcho flex justify-between items-center pt-4 md:pt-7 md:pb-2 pb-0.5 px-4 md:px-10'>
         <div className='pb-2 '> 
@@ -15,11 +15,11 @@ const Srch = ({value,setValue,get}) => {
         <h1 className=' appName font-extrabold   font-sans text-lg md:text-3xl lg:pr-25 lg:text-4xl'><span className='text-green-800'>pi</span>xelScout</h1>
               
         <form  onSubmit={(e)=>{
-               submitHandler(e)
-
+                e.preventDefault()
         }} className=' srch-box relative flex items-center justify-center   '>   
           <button onClick={()=>{
-                     get()                      
+                    //  get()  
+                    setIndex(1)
                 }}
                 className=' active:scale-95 '
                 ><Search color="#ebe5e5" className='  bg-green-800  lg:h-12 lg:w-12 lg:px-3  md:h-10 md:w-10 md:px-2 h-6 w-6  px-1  rounded-full hover:scale-105' strokeWidth={3} />

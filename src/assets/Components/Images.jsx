@@ -3,8 +3,6 @@ import Pagination from './Pagination'
 
 
 const Images = ({userdata,printData, index,value,setValue ,setIndex,get} ) => {
-
-
   
       if(userdata.length>0){
        printData= userdata.map(function(elem ){
