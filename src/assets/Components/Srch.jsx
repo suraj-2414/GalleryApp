@@ -1,9 +1,7 @@
 import { Search ,X  } from 'lucide-react';
 
 const Srch = ({value, setIndex ,setValue,get}) => {
-  // const submitHandler = (e)=>{
-  //    e.preventDefault()
-  // }
+ 
   return (
     <div className=' srcho flex justify-between items-center pt-4 md:pt-7 md:pb-2 pb-0.5 px-4 md:px-10'>
         <div className='pb-2 '> 
@@ -18,7 +16,7 @@ const Srch = ({value, setIndex ,setValue,get}) => {
                 e.preventDefault()
         }} className=' srch-box relative flex items-center justify-center   '>   
           <button onClick={()=>{
-                    //  get()  
+                   
                     setIndex(1)
                 }}
                 className=' active:scale-95 '
