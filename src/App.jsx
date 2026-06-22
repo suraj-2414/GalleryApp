@@ -26,9 +26,7 @@ const App = () => {
                                  query:value,
                                  page:index,
                                  per_page:28,
-                               },
-                               headers:{
-                                Authorization:`Client-ID ${ACCESS_KEY}`
+                                 client_id: ACCESS_KEY,
                                }
                               })
                    setUserData(response.data.results)               
